@@ -20,12 +20,14 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+::selection {
+    background-color: #fff;
+    color: #000000;
+  }
 .container {
-    /* padding-left: 15px;
-    padding-right: 15px; */
     width: 100%;
     max-width: 1500px;
-    padding: 0 50px;
+    padding: 0 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -141,6 +143,24 @@ header .container ul li a:hover {
     .menu-btn__close{
         display: flex;
     }
+    .hero .container .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .hero .container .row .col-2 img{
+        width: 400px !important;
+        height: 600px !important;
+    }
+    .hero .container .row .col-1 h3{
+        font-size: calc(1.5rem + 1vw);
+        margin-bottom: 20px;
+    }
+    .hero .container .row .col-1 p{
+        font-size: calc(1rem + 1vw);
+        margin-bottom: 20px;
+    }
 }
 /* 
 header .container h1 {
@@ -178,6 +198,20 @@ header .container .btn:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.hero .container .row .col-1 h3{
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 20px;
+}
+.hero .container .row .col-1 p{
+    font-size: calc(1rem + 0.3vw);
+    margin-bottom: 20px;
+}
+@media (min-width: 988px) and (max-width: 1167px){
+    .hero .container .row .col-2 img{
+        width: 400px !important;
+        height: 600px !important;
+    }
 }
 /* .hero .container .row .col-1{
     width: 40%;
