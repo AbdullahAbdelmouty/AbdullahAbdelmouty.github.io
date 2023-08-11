@@ -31,39 +31,12 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-/* small */
-  /* @media (min-width: 768px) {
-      .container{
-          width: 750px;
-      }
-      .header{
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-    }
-  } */
-  /* medium */
-  /* @media (min-width: 992px) {
-    .container{
-        width: 970px;
-    }
-    .header{
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-    }
-} */
-/* large */
-/* @media (min-width: 1200px) {
-    .container{
-        width: 1170px;
-    }
-    .header{
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-    }
-} */
+  .section_header{
+    font-weight: bold;
+    font-size: calc(2rem + 1vw);
+    margin-bottom: 15px;
+    border-bottom: #c2c2c2 solid 3px;
+}
 /* end global rules */
 /* start header */
 header {
@@ -162,36 +135,6 @@ header .container ul li a:hover {
         margin-bottom: 20px;
     }
 }
-/* 
-header .container h1 {
-    font-size: 60px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
-}
-header .container h1 span {
-    color: #ff0000;
-}
-header .container p {
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
-}
-header .container .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #ff0000;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 20px;
-    transition: all 0.3s ease;
-}
-header .container .btn:hover {
-    background-color: #ffffff;
-    color: #ff0000;
-} */
 /* end header */
 /*hero section*/
 .hero .container .row {
@@ -213,46 +156,6 @@ header .container .btn:hover {
         height: 600px !important;
     }
 }
-/* .hero .container .row .col-1{
-    width: 40%;
-}
-.hero .container .row .col-2{
-    width: 60%;
-    min-width: 600px;
-} */
-
-/* .hero .container .row .col-2 h1 {
-    font-size: 60px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.hero .container .row .col-2 h1 span {
-    color: #ff0000;
-}
-.hero .container .row .col-2 p {
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.hero .container .row .col-2 .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #ff0000;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 20px;
-    transition: all 0.3s ease;
-}
-.hero .container .row .col-2 .btn:hover {
-    background-color: #ffffff;
-    color: #ff0000;
-}
-.hero .container .row .col-2 img {
-    max-width: 100%;
-} */
 /*end hero section*/
 /*Start Skills Section*/
 .skills{
@@ -260,18 +163,17 @@ header .container .btn:hover {
     flex-direction: column;
     align-items: center;
 }
-.skills_header{
-    font-weight: bold;
-    font-size: calc(2rem + 1vw);
-    margin-bottom: 15px;
-    border-bottom: #c2c2c2 solid 3px;
+.skill{
+    display: flex;
+    justify-content: center;
 }
+
 .skills_Container{
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(105px,1fr));
     gap: 20px;
-    padding: 15px;
+    padding: 30px;
 }
 .skills .skills_Container p{
     cursor: pointer;
@@ -291,3 +193,55 @@ header .container .btn:hover {
 
 }
 /*Ending Skills Section*/
+/*Start Project Section*/
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects_header{
+    font-weight: bold;
+    font-size: calc(2rem + 1vw);
+    margin-bottom: 15px;
+    border-bottom: #c2c2c2 solid 3px;
+}
+.projects_Container{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 25px;
+    padding: 30px;
+}
+.project_card{
+    background-color: #ffff;
+    color: #000000;
+    padding: 14px;
+    margin: 0;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.project_card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.project_card .project_info h3{
+    font-size: calc(1.5rem + .5vw);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.project_card .project_info p{
+    margin: 0;
+    font-weight: normal;
+}
+.project_card .project_info a{
+    color: #000000;
+}
+/*Ending Project Section*/
