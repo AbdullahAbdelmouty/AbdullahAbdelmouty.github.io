@@ -245,3 +245,70 @@ header .container ul li a:hover {
     color: #000000;
 }
 /*Ending Project Section*/
+/*Start Contact me section*/
+.contact_me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_header{
+    font-weight: bold;
+    font-size: calc(2rem + 1vw);
+    margin-bottom: 15px;
+    border-bottom: #c2c2c2 solid 3px;
+}
+.contact_Container{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 25px;
+    padding: 30px;
+}
+.contact_card{
+    background-color: #ffff;
+    color: #000000;
+    padding: 14px;
+    margin: 0;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.contact_card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.contact_card .contact_info h3{
+    font-size: calc(1.5rem + .5vw);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.contact_card .contact_info p{
+    margin: 0;
+    font-weight: normal;
+}
+.contact_card .contact_info a{
+    color: #000000;
+    text-decoration: none;
+}
+/*Ending Contact me section*/
+/*Start Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    color: #ffffff;
+}
+.whatsapp_float{
+    position: fixed;
+    bottom: 22px;
+    right: 13px;
+}
