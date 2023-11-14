@@ -206,7 +206,6 @@ header .container ul li a:hover {
     border-bottom: #c2c2c2 solid 3px;
 }
 .projects_Container{
-    width: 90vw;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
     gap: 25px;
