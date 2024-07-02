@@ -46,9 +46,10 @@ function debounce(func, wait = 10, immediate = true) {
     const landing = document.getElementById("landing");
     const store = document.getElementById("store");
     const tranning = document.getElementById("tranning");
-    document.getElementById(`${ele}`).addEventListener("click",(e)=>{
-      console.log(e);
-    })
+    console.log(website,"website");
+    console.log(landing,"landing");
+    console.log(store,"store");
+    console.log(tranning,"tranning");
   }))
   
 
