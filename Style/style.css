@@ -232,7 +232,11 @@ header .container ul li a:hover {
 /*Ending Skills Section*/
 /*Start Project Section*/
 .filiter_Container{
-    display: none;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(105px,1fr));
+    gap: 20px;
+    padding: 30px;
 }
 .filiter_item{
     background-color: white;

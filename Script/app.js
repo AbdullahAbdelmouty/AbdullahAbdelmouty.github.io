@@ -41,3 +41,14 @@ function debounce(func, wait = 10, immediate = true) {
   window.addEventListener('resize', debounce(checkFade));
   document.addEventListener('DOMContentLoaded', checkFade);
 
+  ["website","landing","store","tranning"].forEach(((ele,index)=>{
+    const website = document.getElementById("website");
+    const landing = document.getElementById("landing");
+    const store = document.getElementById("store");
+    const tranning = document.getElementById("tranning");
+    document.getElementById(`${ele}`).addEventListener("click",(e)=>{
+      console.log(e);
+    })
+  }))
+  
+
