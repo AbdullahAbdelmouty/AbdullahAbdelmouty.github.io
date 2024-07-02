@@ -49,4 +49,5 @@ function debounce(func, wait = 10, immediate = true) {
   console.log(landing,"landing");
   console.log(store,"store");
   console.log(tranning,"tranning");
+  console.log("Test");
 
