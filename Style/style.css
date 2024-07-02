@@ -232,8 +232,7 @@ header .container ul li a:hover {
 /*Ending Skills Section*/
 /*Start Project Section*/
 .filiter_Container{
-    width: 95vw;
-    overflow-x: scroll;
+    display: none;
 }
 .filiter_item{
     background-color: white;
