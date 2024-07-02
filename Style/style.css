@@ -243,6 +243,11 @@ header .container ul li a:hover {
     color: black;
     border-radius: 10px;
 }
+.filiter_item p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
 .projects{
     display: flex;
     flex-direction: column;
