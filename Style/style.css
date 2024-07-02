@@ -243,10 +243,22 @@ header .container ul li a:hover {
     color: black;
     border-radius: 10px;
 }
-.filiter_item p{
+.projects .skills_Container p{
+    cursor: pointer;
+    width: 105px;
+    height: 50px;
+    background-color: #ffff;
+    color: #000000;
+    padding: 8px;
+    margin: 0;
     text-align: center;
+    font-size: medium;
     font-weight: bold;
-    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .projects{
     display: flex;
