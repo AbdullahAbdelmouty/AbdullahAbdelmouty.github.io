@@ -231,6 +231,15 @@ header .container ul li a:hover {
 }
 /*Ending Skills Section*/
 /*Start Project Section*/
+.filiter_Container{
+    width: 95vw;
+    overflow-x: scroll;
+}
+.filiter_item{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
 .projects{
     display: flex;
     flex-direction: column;
